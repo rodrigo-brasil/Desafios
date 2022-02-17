@@ -5,6 +5,10 @@ import java.util.regex.Pattern;
 
 public class Questao02 {
 
+    private Questao02() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static void verificarSenha(String senha) {
         Pattern letterLower = Pattern.compile("[a-z]");
         Pattern letterUpper = Pattern.compile("[A-Z]");

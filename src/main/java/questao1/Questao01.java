@@ -1,9 +1,10 @@
 package questao1;
 
-import java.util.Collections;
-import java.util.List;
-
 public class Questao01 {
+
+    private Questao01() {
+        throw new IllegalStateException("Utility class");
+    }
 
     public static void imprimirEscada(int n){
         if(n <= 0 ) return;

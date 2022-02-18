@@ -20,8 +20,13 @@ Siga estas etapas:
 
 ## ☕ Usando
 
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
+* Java
+* Maven
+* Junit5
+* Java swing
 
+
+[⬆ Voltar ao topo](#Desafios)<br>
 ## :metal: Autor<br>
 <table>
   <tr>

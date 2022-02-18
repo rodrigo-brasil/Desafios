@@ -8,7 +8,12 @@ public class Questao03 {
         throw new IllegalStateException("Utility class");
     }
 
-    public static void anagrama(String palavra) {
+    /**
+     * Encontra o número de pares de substrings que são anagramas da palavra.
+     * @param palavra palavra a ser testada
+     * @return  Inteiro com a quantidade de pares de substrings que são anagramas
+     */
+    public static int anagrama(String palavra) {
 
         Map<String, Integer> map = new HashMap<>();
 
@@ -23,9 +28,15 @@ public class Questao03 {
                     map.put(key, 0);
             });
         }
-        System.out.println(map.values().stream().mapToInt(v -> v).sum());
+        return map.values().stream().mapToInt(v -> v).sum();
     }
 
+    /**
+     * Divide uma string em substrings de tamanho igual
+     * @param str String a ser dividida
+     * @param size Tamanho das substrings gerada
+     * @return Lista com todas substrings gerada
+     */
     private static List<String> splitStringBySize(String str, int size) {
         if (size <= 0) return new ArrayList<>();
         List<String> pieces = new ArrayList<>();
